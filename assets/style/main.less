@@ -8,6 +8,7 @@
 @hoverColor: #c7b299;
 
 
+
 :root{
     --slider:0;
 }
@@ -36,6 +37,23 @@ header{
 
     
 }
+
+.navigation{
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    
+}
+.scroll{
+
+    background-color: black !important;
+    opacity: 0.7;
+    transition: background-color 200ms linear;
+}
+
 
 button{
     border-radius: 3px;
@@ -128,12 +146,6 @@ nav{
 
 }
 
-.scroll{
-
-    background-color: #555556 !important;
-    
-    transition: background-color 200ms linear;
-}
 
 
 .services{
