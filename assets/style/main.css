@@ -204,6 +204,50 @@ nav .navContent .logo p {
   width: 100%;
   height: 100%;
   background-image: url("../img/video.png");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.video-presentation .video .content {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.video-presentation .video .content h3 {
+  margin-top: 50px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+  color: white;
+}
+.video-presentation .video .content .text {
+  text-align: center;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  width: 50%;
+  line-height: 28px;
+}
+.video-presentation .video .content .time {
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  color: #c7b299;
+  font-weight: bold;
+}
+.video-presentation .video .content .play {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.video-presentation .video .content .play .circle {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  opacity: 0.2;
+  background-color: black;
 }
 .exelent-mobile {
   height: 700px;
