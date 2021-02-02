@@ -12,6 +12,9 @@
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/montserrat/v15/JTUSjIg1_i6t8kCHKm45xW4.ttf) format('truetype');
 }
+:root {
+  --slider: 0;
+}
 body {
   margin: 0;
   padding: 0;
@@ -297,6 +300,27 @@ nav .navContent .logo p {
   background-color: white;
   margin-top: 15px;
 }
+.slider {
+  width: 370px;
+  height: 220px;
+  overflow: hidden;
+}
+.slider .slides {
+  width: 200%;
+  height: 220px;
+  display: flex;
+}
+.slider .slides .slide {
+  width: 50%;
+  transition: 2s;
+}
+.slider .slides .slide img {
+  width: 370px;
+  height: 220px;
+}
+.first {
+  margin-left: var(--slider);
+}
 .recent-photos {
   height: 750px;
   width: 100%;
@@ -347,6 +371,95 @@ nav .navContent .logo p {
   height: 400px;
   background-color: white;
   border: #f8f8f8 1px solid;
+  transition: 0.5s ease-out all;
+}
+.recent-photos .content .posts .post .text {
+  padding: 0 30px 0 30px;
+}
+.recent-photos .content .posts .post .text p {
+  font-size: 14px;
+  line-height: 22px;
+  font-family: 'Montserrat', sans-serif;
+  color: #8c8c8c;
+  transition: 0.5s ease-out all;
+}
+.recent-photos .content .posts .post .text h3 {
+  margin-top: 30px;
+  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
+  color: #555556;
+  transition: 0.5s ease-out all;
+}
+.recent-photos .content .posts .post .text a {
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  color: #c7b299;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+.recent-photos .content .posts .post .text a img {
+  padding-left: 10px;
+}
+.recent-photos .content .posts .post .photo {
+  position: relative;
+}
+.recent-photos .content .posts .post .photo .calendar {
+  width: 50px;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: auto;
+  padding: 20px 0 0 20px;
+}
+.recent-photos .content .posts .post .photo .calendar .date {
+  width: 50px;
+  height: 35px;
+  background-color: #363636;
+  border-radius: 3px 3px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  color: white;
+  transition: 0.5s ease-out all;
+}
+.recent-photos .content .posts .post .photo .calendar .month {
+  width: 50px;
+  height: 25px;
+  background-color: #252525;
+  border-radius: 0 0 3px 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  color: white;
+  transition: 0.5s ease-out all;
+}
+.recent-photos .content .posts .post .photo img {
+  transition: 0.5s ease-out all;
+}
+.recent-photos .content .posts .post:hover {
+  border: #362f2d 1px solid;
+  background-color: #362f2d;
+}
+.recent-photos .content .posts .post:hover .calendar .date {
+  background-color: #c7b299;
+}
+.recent-photos .content .posts .post:hover .calendar .month {
+  background-color: #a48d72;
+}
+.recent-photos .content .posts .post:hover .text p {
+  color: white;
+}
+.recent-photos .content .posts .post:hover .text h3 {
+  color: #c7b299;
+}
+.recent-photos .content .posts .post:hover .photo img {
+  filter: brightness(50%);
 }
 .recent-photos .content .arrows {
   display: flex;
