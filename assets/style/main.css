@@ -1,0 +1,214 @@
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v19/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaooCP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v15/JTUSjIg1_i6t8kCHKm45xW4.ttf) format('truetype');
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+header {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  background-color: #555556;
+}
+header .headerContent {
+  height: 100%;
+  width: 100%;
+  background-color: #555556;
+}
+nav {
+  width: 100%;
+  height: 140px;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav .navContent {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .navContent .menu {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: end;
+  padding-right: 55px;
+}
+nav .navContent .menu li {
+  min-width: 20px;
+  padding: 0 10px 0 10px;
+  list-style: none;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+nav .navContent .menu li a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+nav .navContent .menu li a:hover {
+  color: #c7b299;
+}
+nav .navContent .chart {
+  padding: 0 5px 0 20px;
+}
+nav .navContent .chart {
+  padding: 0 20px 0 0;
+}
+nav .navContent .logo {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+nav .navContent .logo p {
+  font-size: 34px;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+}
+.scroll {
+  background-color: #555556 !important;
+  transition: background-color 200ms linear;
+}
+.services {
+  height: 375px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.services .services-content {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.services .services-content .element {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  height: 100%;
+}
+.services .services-content .element h3 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 22px;
+}
+.services .services-content .element svg {
+  fill: #555556;
+}
+.services .services-content .element p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  text-align: center;
+}
+.services .services-content .element .line {
+  width: 70px;
+  height: 3px;
+  background-color: #fbfaf8;
+  margin-top: 10px;
+}
+.services .services-content .element:hover {
+  color: #c7b299;
+}
+.services .services-content .element:hover .line {
+  background-color: #c7b299;
+}
+.services .services-content .element:hover svg {
+  fill: #c7b299;
+}
+.waxom-realization {
+  height: 700px;
+  width: 100%;
+  background-color: #fbfaf8;
+}
+.text-boxes {
+  height: 150px;
+  width: 100%;
+  background-image: url("../img/Background.png");
+}
+.latest-projects {
+  height: 1150px;
+  width: 100%;
+  background-color: white;
+}
+.video-presentation {
+  height: 700px;
+  width: 100%;
+  background-color: #555556;
+}
+.video-presentation .video {
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/video.png");
+}
+.exelent-mobile {
+  height: 700px;
+  width: 100%;
+  background-color: #fbfaf8;
+}
+.counters {
+  height: 300px;
+  width: 100%;
+  background-image: url(../img/Background.png);
+  background-color: #555556;
+}
+.recent-photos {
+  height: 750px;
+  width: 100%;
+  background-color: white;
+}
+.partners {
+  height: 100%;
+  width: 100%;
+  background-color: #555556;
+  min-height: 490px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../img/partners/background.png);
+}
+.partners .partners-content {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0px 50px;
+}
+footer {
+  height: 620px;
+  width: 100%;
+  background-color: #191919;
+}
+footer .footer-content {
+  width: 100%;
+  height: auto;
+}
+footer .copyright {
+  width: 100%;
+  height: 110px;
+  background-color: black;
+}
