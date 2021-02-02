@@ -30,6 +30,26 @@ header{
     
 }
 
+button{
+    border-radius: 3px;
+    width: 170px;
+    height: 50px;
+    color: white;
+    background-color: #998675;
+    font-family: @RaleWayFont;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    border-bottom: 3px solid #736357;
+}
+
+button:hover{
+    
+    background-color: #736357;
+    color: @hoverColor;
+    border: 3px solid #998675;
+    
+}
 
 
 nav{
@@ -178,7 +198,39 @@ nav{
     height: 150px;
     width: 100%;
     background-image: url("../img/Background.png");
+    display: flex;
+    justify-content: center;
+    align-self: center;
 
+    & .content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 60%;
+        height: 100%;
+
+        & .text p{
+
+            font-family: @MonserratFont;
+            font-size: 18px;
+            color: #615855;
+            margin-top: 5px;
+            
+        }
+
+        & .text h3{
+            font-family: @RaleWayFont;
+            font-size: 28px;
+            margin-bottom: 5px;
+            color: white;
+
+            
+        }
+        & .text span{
+            color:@hoverColor;
+        }
+
+    }
 }
 
 .latest-projects{
