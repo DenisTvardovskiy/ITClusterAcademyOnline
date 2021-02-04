@@ -1,0 +1,178 @@
+//main: ../main.less
+
+@import "../elements/var.less";
+
+.recent-photos{
+    height: 750px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & .content{
+        width: 60%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        & .title{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            & h2{
+                font-family: @RaleWayFont;
+                font-size: 30px;
+                color: @backColor;
+                margin-bottom: 20px;
+            }
+            & p{
+                font-family: @MonserratFont;
+                width: 80%;
+                font-size: 16px;
+                line-height: 28px;
+                color: #8c8c8c;
+                text-align: center;
+            }
+        }
+        & .posts{
+            @tras: ease-out ;
+            width: 100%;
+            height: 400px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+
+            & .post{
+                width: 370px;
+                height: 400px;
+                background-color: white;
+                border: #f8f8f8 1px solid;
+                transition: .5s @tras all;
+                
+                
+                & .text{
+                    padding:0 30px 0 30px;
+                    & p{
+                        font-size: 14px;
+                        line-height: 22px;
+                        font-family: @MonserratFont;
+                        color: #8c8c8c;
+                        transition: .5s @tras all;
+                    }
+
+                    & h3{
+                        margin-top: 30px;
+                        font-size: 20px;
+                        font-family: @RaleWayFont;
+                        color: @backColor;
+                        transition: .5s @tras all;
+                    }
+
+                    & a{
+                        text-decoration: none;
+                        font-family: @MonserratFont;
+                        font-size: 14px;
+                        color: @hoverColor;
+                        font-weight: 300;
+                        margin-bottom: 30px;
+
+                        & img{
+                            padding-left: 10px;
+                        }
+                    }
+                }
+
+
+                & .photo {
+                    position: relative;
+                    & .calendar{
+                        width: 50px;
+                        height: 60px;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        margin: auto;
+                        padding: 20px 0 0 20px;
+                        & .date{
+                            width: 50px;
+                            height: 35px;
+                            background-color: #363636;
+                            border-radius: 3px 3px 0 0;
+
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            font-family: @MonserratFont;
+                            font-size: 24px;
+                            color: white;
+                            transition: .5s @tras all;
+                        }
+                        & .month{
+                            width: 50px;
+                            height: 25px;
+                            background-color: #252525;
+                            border-radius: 0 0 3px 3px;
+
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            font-family: @MonserratFont;
+                            font-size: 12px;
+                            color: white;
+                            transition: .5s @tras all;
+                        }
+                    }
+                    & img{
+                        transition: .5s @tras all;
+                        
+                    }
+                }
+                
+                &:hover{
+                    border: #362f2d 1px solid;
+                    background-color: #362f2d;
+                    
+                }
+                &:hover .calendar .date{
+                    background-color: @hoverColor;
+                }
+                &:hover .calendar .month{
+                    background-color: #a48d72;
+                }
+                &:hover .text p{
+                    color: white;
+                }
+                &:hover .text h3{
+                    color: @hoverColor;
+                    
+                }
+                &:hover .photo img{
+                    filter: brightness(50%);
+                    
+                }
+
+            }
+
+
+
+        }
+
+        & .arrows{
+            display: flex;
+            flex-direction: row;
+            
+            & img{
+                margin: 5px;
+            }
+        }
+
+    }
+}

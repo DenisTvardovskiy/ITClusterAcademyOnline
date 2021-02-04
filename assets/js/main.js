@@ -17,6 +17,9 @@ var op = ["0", '-50%', "-100%", "-150%", "-200%", "-150%", "-100%", "-50%"];
 setInterval(_=>{
     document.documentElement.style.setProperty("--slider", op[counter]);
     counter++;
+
+    
+
     if(counter > 8){
         counter =0;
         
