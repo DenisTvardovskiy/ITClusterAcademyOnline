@@ -15,7 +15,144 @@ header{
         width: 100%;
         background-color: #555556;
 
+        & .container{
+            width: 100%;
+            
+
+            & .carousel{
+                
+                    height: 100vh;
+                    overflow: hidden;
+                    position: relative;
+                    
+                    background: #555556;
+                    
+                    & .slider{
+                        display: flex;
+                        height: 100%;
+                        width: 500%;
+                        transition: 1s;
+
+                        & section{
+                            flex-basis: 100%;
+                            justify-content: center;
+                            align-items: center;
+                            display: flex;
+                            font-size: 20px;
+                            & img{
+                                width: 100%;
+                                height: 100%;
+
+                            }
+                            & .content{
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                justify-content: center;
+                                position: absolute;
+
+                                & h2{
+                                    font-family: @RaleWayFont;
+                                    font-size: 36px;
+                                    color: white;
+                                    margin: 0;
+
+                                }
+
+                                & h1{
+                                    font-family: @RaleWayFont;
+                                    font-size: 52px;
+                                    color: white;
+                                    font-weight: bolder;
+                                    margin: 30px 0 30px 0;
+
+                                }
+                                & p{
+                                    width: 80%;
+                                    text-align: center;
+                                    font-family: @MonserratFont;
+                                    font-size: 16px;
+                                    line-height: 24px;
+                                    color: white;
+                                    margin: 0 0 15px 0;
+                                }
+
+                            }
+                        }
+
+                    }
+                    & .control{
+                       
+                        &  .arrow i {
+                            font-size: 70px;
+                            -webkit-user-select: none;
+                            color: #416be4;
+                          }
+
+                        & .left, .right {
+                            position: absolute;
+                            width: 80px;
+                            height: 80px;
+                            top: 50%;
+                            
+                            
+                            cursor: pointer;
+                            & img{
+                                width: 100%;
+                                height: 100%;
+                            }
+                          }
+                        &  .left {
+                            left: 150px;
+                            transform: rotate(135deg);
+
+                          }
+                        & .right {
+                            right: 150px;
+                            transform: rotate(-45deg);
+                          }
+                         
+                        
+                        & ul {
+                            
+                            list-style: none;
+                            display: flex;
+                            position: absolute;
+                            bottom: 0;
+                            left: 50%;
+                            margin: 0 0 20px 0 ;
+                            padding: 0;
+                            transform: translate(-50%);
+
+                            & li {
+                                width: 10px;
+                                height: 10px;
+                                background: #969697;
+                                
+                                border-radius: 50px;
+                                margin: 10px;
+                                cursor: pointer;
+
+                              }
+                            & li.selected {
+                                background: transparent;
+                                border: 2px solid white;
+                                
+                              }
+                          }
+                    }
+                  
+            }
+        }
+
+
     }
 
     
 }
+
+
+
+
+  
+ 
