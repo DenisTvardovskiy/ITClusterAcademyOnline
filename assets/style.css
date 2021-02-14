@@ -15,7 +15,8 @@ body {
 }
 
 button{
-    width: 120px;
+    width: auto;
+    min-width: 120px;
     height: 40px;
     color: var(--main-color);
     font-size: 16px;
@@ -24,7 +25,7 @@ button{
     text-transform: uppercase;
     font-weight: bolder;
     font-family: var(--hammer-font);
-    padding: 0;
+    
     border-radius: 4px;
 }
 
@@ -94,7 +95,13 @@ nav {
     font-family: var(--roboto-font);
 }
 
-.nav-content ul li.active{
+.nav-content ul li a{
+    text-decoration: none;
+    color: white;
+
+}
+
+.nav-content ul li a:hover{
     color: #00e0d0 !important; 
 }
 
@@ -342,3 +349,117 @@ nav {
 }
 
 /*Expertise Section end*/
+
+
+/*Team section start*/
+.team{
+    height: auto;
+    width: 100%;
+    background-image: linear-gradient(to bottom, rgba(9,5,47, 0.85), rgb(49,29,94, 0.85)),url("./img/team/background.png");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team .team-content{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.team .team-content .text{
+    padding: 70px 0 70px 0;
+    width: 100%;
+    height: 100%;
+    font-family: var(--display-font);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.team .team-content .text h2{
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+}
+.team .team-content .text p{
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+}
+
+.team .team-content .text span.line{
+    width: 50px;
+    height: 2px;
+    background-color: white;
+}
+
+
+
+.team .team-content .team-members{
+    width: auto;
+    height: 310px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+.team .team-content .team-members .member{
+    margin: 0 5px 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    text-transform: uppercase;
+    font-family: var(--roboto-font);
+    border-bottom: 1px solid #78758b;
+}
+
+.team .team-content .team-members .member h4{
+    margin: 20px 0 10px;
+    font-weight: bold;
+    font-size: 14px;
+
+}
+
+.team .team-content .team-members .member p{
+    margin: 0 0 30px 0;
+    font-weight: lighter;
+    font-size: 13px;
+
+}
+
+
+.team .team-content .action{
+    padding: 70px 0 70px 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+
+.team .team-content .action p{
+    margin: 0 0 30px 0;
+    font-size: 14px;
+    font-family: var(--roboto-font);
+    color: white;
+
+}
+
+/*Team section end*/
+
+/*Work section start*/
