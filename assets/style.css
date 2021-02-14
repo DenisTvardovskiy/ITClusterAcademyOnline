@@ -10,6 +10,7 @@ body {
 :root{
     --roboto-font: 'Roboto', sans-serif;
     --hammer-font: 'Hammersmith One', sans-serif;
+    --display-font: 'Playfair Display', sans-serif;
     --main-color: #2cbbcd;
 }
 
@@ -97,8 +98,10 @@ nav {
     color: #00e0d0 !important; 
 }
 
+/*NAV BAR end*/
 
 
+/*About Section start*/
 .about{
     width: 100%;
     height: auto;
@@ -147,7 +150,7 @@ nav {
 .about .about-content .text .right h2{
     margin: 0;
     padding: 0;
-    font-family: 'Playfair Display', serif;
+    font-family: var(--display-font);
     font-size: 22px;
     color: #413d4b;
     text-transform: uppercase;
@@ -175,13 +178,13 @@ nav {
 
 .about .video .vid img{
     width: 100%;
-    height: 730px;
+    height: 100%;
 
 }
 
 .about .video .vid .overflow{
     width: 100%;
-    height: 730px;
+    height: 100%;
     background-image: -moz-linear-gradient( 0deg, rgb(9,5,47) 0%, rgb(49,29,94) 100%);
     background-image: -webkit-linear-gradient( 0deg, rgb(9,5,47) 0%, rgb(49,29,94) 100%);
     background-image: -ms-linear-gradient( 0deg, rgb(9,5,47) 0%, rgb(49,29,94) 100%);
@@ -228,3 +231,114 @@ nav {
     text-transform: uppercase;
 }
 
+/*About Section end*/
+
+
+/*Expertise Section start*/
+.expertise{
+    height: auto;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.expertise .exp-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 100%;
+}
+.expertise .exp-content .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 0 0 0;
+    margin: 0;
+
+}
+
+
+.expertise .exp-content .text h2{
+    color: black;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-family: var(--display-font);
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+
+}
+.expertise .exp-content .text p{
+    color: #2f2d35;
+    font-size: 14px;
+    font-family: var(--display-font);
+    padding: 20px 0 20px 0;
+    margin: 0;
+}
+
+.expertise .exp-content .text span.line{
+    width: 50px;
+    height: 2px;
+    background-color: #2f2d35;
+}
+
+.expertise .exp-content .grid{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 0 70px 0;
+    margin: 0;
+    
+}   
+
+.expertise .exp-content .grid .top{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.expertise .exp-content .grid .item{
+    width: 320px;
+    height: 250px;
+    flex: 1 1 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-bottom: 1px solid #ebebeb;
+
+}
+
+
+
+.expertise .exp-content .grid .item h4{
+    margin: 30px 0 30px 0;
+    font-family: var(--roboto-font);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+
+
+}
+.expertise .exp-content .grid .item p{
+    margin: 0;
+    font-family: var(--roboto-font);
+    font-size: 14px;
+    line-height: 22px;
+    color: #333333;
+
+}
+
+/*Expertise Section end*/
