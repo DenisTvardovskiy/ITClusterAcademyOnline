@@ -7,6 +7,11 @@ body {
 @import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
 
+
+a{
+    text-decoration: none;
+}
+
 :root{
     --roboto-font: 'Roboto', sans-serif;
     --hammer-font: 'Hammersmith One', sans-serif;
@@ -463,3 +468,68 @@ nav {
 /*Team section end*/
 
 /*Work section start*/
+
+
+.works{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.works .our{
+    width: 60%;
+    padding: 70px 0 70px 0;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.works .our h2{
+    text-transform: uppercase;
+    font-family: var(--display-font);
+    font-size: 22px;
+    font-weight: bold;
+
+}
+
+.works .our p a{
+    font-family: var(--roboto-font);
+    font-size: 14px;
+    color: black;
+}
+
+.works .works-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.works .works-content .grid{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.works .works-content .grid .grid-item{
+    flex: 1 1 16%;
+    width: 100%;
+    height: auto;
+}
+.works .works-content .grid .grid-item img{
+    width: 100%;
+    height: 100%;
+
+}
+
+.works .works-content button{
+    margin: 70px 0 70px 0;
+
+}
