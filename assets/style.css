@@ -49,6 +49,7 @@ header {
 }
 /*NAV BAR*/
 nav { 
+    z-index: 999;
     height: 80px;
     width: 100%;
     position: fixed;
@@ -58,6 +59,7 @@ nav {
 }
 
 .nav-content {
+    z-index: 999;
     height: 100%;
     width: 60%;
     display: flex;
@@ -112,6 +114,71 @@ nav {
 
 /*NAV BAR end*/
 
+/*Header section start*/
+
+.header-content{
+    z-index: 1  ;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(9,5,47, 0.85), rgb(49,29,94, 0.85)),url("./img/team/background.png");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.header-content h2{
+    font-family: var(--display-font);
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 32px;
+    color: white;
+    margin: 0;
+}
+.header-content span{
+    width: 50px;
+    height: 1px;
+    background-color: var(--main-color);
+    margin: 30px 0 35px 0;
+}
+.header-content p{
+    margin: 0 0 50px 0;
+    width: 50%;
+    text-align: center;
+    font-family: var(--roboto-font);
+    font-size: 14px;
+    line-height: 24px;
+    color: white;
+}
+
+.header-content ul{
+    
+    display: flex;
+    list-style: none;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0 0 70px 0 ;
+}
+
+.header-content ul li{
+    
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 5px 0 5px;
+    background-color: transparent;
+    border: 1px solid white ;
+
+}
+.header-content ul li.selected{
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color);
+}
+
 
 /*About Section start*/
 .about{
@@ -156,6 +223,7 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: flex-start ;
 
 }
 
